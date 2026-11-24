@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamur Kafalar | Ciddiyeti Bir Kenara Bırak!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Arka Plan Dekoratif Hamur Baloncukları -->
+  <div class="blob-bg blob-1"></div>
+  <div class="blob-bg blob-2"></div>
+  <div class="blob-bg blob-3"></div>
+
+  <!-- Üst Menü / Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        <span class="logo-clay-icon">🎨</span>
+        <span class="logo-text">Hamur <span class="accent-purple">Kafalar</span></span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#galeri" class="nav-link">Galeri</a>
+        <a href="#hakkinda" class="nav-link">Hakkında</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero (Giriş) Bölümü -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-badge">✨ Rengarenk & Yumuşacık Hamur Evreni</div>
+      <h1 class="hero-title">Ciddiyeti bir kenara bırak!</h1>
+      <p class="hero-subtitle">
+        Hayat bazen fazla ciddi, ama oyun hamurları asla değil! Rengarenk yoğrulmuş, 
+        birbirinden sevimli ve biraz da çılgın 10 orijinal karakterle tanışmaya hazır mısın?
+      </p>
+      <div class="hero-actions">
+        <a href="#galeri" class="btn btn-primary">
+          <span>Galeriyi keşfet</span>
+          <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <polyline points="19 12 12 19 5 12"></polyline>
+          </svg>
+        </a>
+        <a href="#hakkinda" class="btn btn-secondary">Biz Kimiz?</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Bölümü -->
+  <main id="galeri" class="gallery-section">
+    <div class="section-header">
+      <span class="section-tag">Karakter Koleksiyonu</span>
+      <h2 class="section-title">Hamur Dünyasının 10 Yıldızı</h2>
+      <p class="section-desc">Görsellerin tamamını görmek ve hikayelerine yakından bakmak için dilediğin karta tıkla!</p>
+    </div>
+
+    <!-- 10 Kartlık Galeri Grid (Bilgisayarda 3 Sütun, Mobilde Tek Sütun) -->
+    <div class="cards-grid">
+
+      <!-- Kart 1: Bornozlu Ördek -->
+      <article class="dough-card" data-index="0" data-src="sac-fircasina-sarki-soyleyen-bornozlu-ordek-1.png">
+        <div class="card-badge pink-badge">#1 Sahne Işığı</div>
+        <div class="card-image-wrap">
+          <img src="sac-fircasina-sarki-soyleyen-bornozlu-ordek-1.png" alt="Saç fırçasına şarkı söyleyen bornozlu ördek" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Banyo Tenoru Vak-Vak</h3>
+          <p class="card-text">
+            Duştan yeni çıktı, saç fırçasını mikrofon yaptı ve banyo akustiğinde tüm mahalleye konser veriyor. Eurovision jürisi kapıda bekliyor!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-pink">#DuşKonseri</span>
+            <span class="tag tag-yellow">#VakStar</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 2: Çorapta Kayan Muz -->
+      <article class="dough-card" data-index="1" data-src="corapta-kayan-muz-2.png">
+        <div class="card-badge yellow-badge">#2 Hız Tutkunu</div>
+        <div class="card-image-wrap">
+          <img src="corapta-kayan-muz-2.png" alt="Çorapta kayan muz" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Kaygan Muzo</h3>
+          <p class="card-text">
+            Yün çorabın içinde ev salonunda artistik buz pateni yapıyor. Kendi kabuğuna basıp düşmeyen tek ve rakipsiz meyve!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-yellow">#ÇorapPisti</span>
+            <span class="tag tag-purple">#MuzHızı</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 3: Sarı İpe Dolanmış Mor Ahtapot -->
+      <article class="dough-card" data-index="2" data-src="sari-ipe-dolanmis-mor-ahtapot-3.png">
+        <div class="card-badge purple-badge">#3 Örgü Ustası</div>
+        <div class="card-image-wrap">
+          <img src="sari-ipe-dolanmis-mor-ahtapot-3.png" alt="Sarı ipe dolanmış mor ahtapot" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Düğümlü Dokunaç</h3>
+          <p class="card-text">
+            Bir yumak sarı iplikle kazak örmeye niyetlendi, 8 koluyla kendini hediye paketi gibi bağladı. Kurtarma ekibi çay molasında!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-purple">#İpYumağı</span>
+            <span class="tag tag-pink">#AhtapotDüğümü</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 4: Göbeğiyle Yoga Yapan Avokado -->
+      <article class="dough-card" data-index="3" data-src="gobegiyle-yoga-yapan-avokado-4.png">
+        <div class="card-badge pink-badge">#4 Zen Ustası</div>
+        <div class="card-image-wrap">
+          <img src="gobegiyle-yoga-yapan-avokado-4.png" alt="Göbeğiyle yoga yapan avokado" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Zen Avokado</h3>
+          <p class="card-text">
+            Çekirdek göbeğini gururla taşıyor, 'İçindeki güvenci ve çekirdeği bul' diyerek lotus pozisyonunda nefes alıyor. Tam bir sağlıklı yaşam gurusu.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-yellow">#Namaste</span>
+            <span class="tag tag-pink">#İçHuzur</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 5: Kitabı Delen Gözlüklü Kaktüs -->
+      <article class="dough-card" data-index="4" data-src="kitabi-delen-gozluklu-kaktus-5.png">
+        <div class="card-badge yellow-badge">#5 Bilim İnsanı</div>
+        <div class="card-image-wrap">
+          <img src="kitabi-delen-gozluklu-kaktus-5.png" alt="Kitabı delen gözlüklü kaktüs" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Profesör Kaktüs</h3>
+          <p class="card-text">
+            Bilgiye o kadar aç ki, ansiklopediyi okumakla yetinmeyip bizzat içinden geçti. Dikenlerinin arasından felsefi fikirler fışkırıyor!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-purple">#KitapKurdu</span>
+            <span class="tag tag-yellow">#DikenliZeka</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 6: Kiraz Domates Halteri Kaldıran Brokoli -->
+      <article class="dough-card" data-index="5" data-src="kiraz-domates-halteri-kaldiran-brokoli-6.png">
+        <div class="card-badge purple-badge">#6 Fitness Kralı</div>
+        <div class="card-image-wrap">
+          <img src="kiraz-domates-halteri-kaldiran-brokoli-6.png" alt="Kiraz domates halteri kaldıran brokoli" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Şampiyon Brokoli</h3>
+          <p class="card-text">
+            İki kiraz domatesten halter yaptı, sebze liginin en kaslısı olmak için basıyor! Ağır antrenman sonrası mayonez sosunu reddetti.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-pink">#FitSebze</span>
+            <span class="tag tag-purple">#DomatesHalteri</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 7: Uykucu Kedi ve Dev Kahve -->
+      <article class="dough-card" data-index="6" data-src="uykucu-kedi-ve-dev-kahve-7.png">
+        <div class="card-badge pink-badge">#7 Keyif Düşkünü</div>
+        <div class="card-image-wrap">
+          <img src="uykucu-kedi-ve-dev-kahve-7.png" alt="Uykucu kedi ve dev kahve" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Kafeinzede Tekir</h3>
+          <p class="card-text">
+            Kendinden 3 kat büyük kahve fincanına kurulup derin uykuya daldı. 'Önce beş dakika kestireyim, sonra kahvemi içerim' kafasında.
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-yellow">#KediUykusu</span>
+            <span class="tag tag-pink">#DevKahve</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 8: Pizza Pikaplarında Kulaklıklı Mantar DJ -->
+      <article class="dough-card" data-index="7" data-src="pizza-pikaplarinda-kulaklikli-mantar-dj-8.png">
+        <div class="card-badge yellow-badge">#8 Parti Lideri</div>
+        <div class="card-image-wrap">
+          <img src="pizza-pikaplarinda-kulaklikli-mantar-dj-8.png" alt="Pizza pikaplarında kulaklıklı mantar DJ" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">DJ Mantar</h3>
+          <p class="card-text">
+            Margarita pizza dilimlerini pikap yaptı, nefis hamur beat'leri çalıyor. Scratch atarken peynir uzuyor ama parti hiç durmuyor!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-purple">#PizzaBeat</span>
+            <span class="tag tag-yellow">#DJMantar</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 9: Kasklı Salyangozun Kaykay Yarışı -->
+      <article class="dough-card" data-index="8" data-src="kaskli-salyangozun-kaykay-yarisi-9.png">
+        <div class="card-badge purple-badge">#9 Pist Canavarı</div>
+        <div class="card-image-wrap">
+          <img src="kaskli-salyangozun-kaykay-yarisi-9.png" alt="Kasklı salyangozun kaykay yarışı" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Hızlı ve Sümüklü</h3>
+          <p class="card-text">
+            Kaskını taktı, kaykayının üzerine atladı. Saatte 0.05 km hızla rüzgarı arkasına alıp tozu dumana katıyor, virajlarda drift çekiyor!
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-pink">#Kaykaycı</span>
+            <span class="tag tag-purple">#SalyangozDrift</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Kart 10: Peynir Ayında Patates Astronot -->
+      <article class="dough-card" data-index="9" data-src="peynir-ayinda-patates-astronot-10.png">
+        <div class="card-badge pink-badge">#10 Kozmik Kaşif</div>
+        <div class="card-image-wrap">
+          <img src="peynir-ayinda-patates-astronot-10.png" alt="Peynir Ayında Patates Astronot" loading="lazy">
+          <div class="card-overlay">
+            <span class="zoom-pill">🔍 Büyük Gör</span>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Kozmik Patates</h3>
+          <p class="card-text">
+            Gravyer peynirinden kraterlere ilk adımı attı. Telsizden uzay üssüne anons geçti: 'Bir patates için küçük, sebzelik için dev bir adım!'
+          </p>
+          <div class="card-tags">
+            <span class="tag tag-yellow">#KozmikPatates</span>
+            <span class="tag tag-pink">#PeynirAyı</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- Hakkında Bölümü -->
+  <section id="hakkinda" class="about-section">
+    <div class="about-card">
+      <div class="about-icon">🧁</div>
+      <h2 class="about-title">Hamur Kafalar Nedir?</h2>
+      <p class="about-text">
+        <strong>Hamur Kafalar</strong>, günlük hayatın koşuşturmacasından, resmi e-postalardan ve yetişkin ciddiyetinden 
+        bir anlığına uzaklaşmak isteyen herkes için tasarlandı.
+      </p>
+      <p class="about-text">
+        Buradaki her bir figür, oyun hamurunun çocuksu neşesini ve sınırsız hayal gücünü yansıtıyor. 
+        Kendinizi bir gün banyoda şarkı söyleyen bornozlu bir ördek gibi, başka bir gün ise gravitasyona meydan okuyan 
+        bir patates astronot gibi hissedebilirsiniz. Bizce ikisi de harika!
+      </p>
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <span class="hl-emoji">🟡</span>
+          <div>
+            <h4>%100 Hamur Neşesi</h4>
+            <p>Yapay ciddiyet içermez, tamamen saf neşe!</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="hl-emoji">🟣</span>
+          <div>
+            <h4>Özgür Hayal Gücü</h4>
+            <p>Pizzadan pikap, domatesten halter olur mu? Bizde olur!</p>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="hl-emoji">🌸</span>
+          <div>
+            <h4>Gülümseme Garantili</h4>
+            <p>Her baktığınızda yüzünüzde tebessüm bırakır.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Alt Bilgi (Footer) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span>🎨 Hamur Kafalar</span>
+      </div>
+      <p class="footer-text">Oyun hamuru kıvamında, tatlı ve neşeli anlar dileriz.</p>
+      <div class="footer-bottom">
+        <span>© 2026 Hamur Kafalar - Tüm Hakları Hamur Gibi Saklıdır.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal (Büyük Görsel Açılır Pencere) -->
+  <div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-wrapper">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Kapat">&times;</button>
+      
+      <button class="modal-nav modal-prev" id="modalPrevBtn" aria-label="Önceki Görsel">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <button class="modal-nav modal-next" id="modalNextBtn" aria-label="Sonraki Görsel">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="modal-card">
+        <div class="modal-image-container">
+          <img id="modalImg" src="" alt="Hamur Karakter Detayı">
+        </div>
+        <div class="modal-info">
+          <div class="modal-meta">
+            <span id="modalBadge" class="card-badge pink-badge">#1</span>
+            <span id="modalCounter" class="modal-counter">1 / 10</span>
+          </div>
+          <h3 id="modalTitle" class="modal-title">Başlık</h3>
+          <p id="modalDesc" class="modal-desc">Açıklama</p>
+          <div id="modalTags" class="card-tags"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
